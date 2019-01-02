@@ -34,6 +34,14 @@ A pubspec can have the following fields:
 : Optional.
   [_Learn more._](#homepage)
 
+`repository`
+: Optional. URL pointing to the repository.
+  [_Learn more._](#repository)
+
+`issue_tracker`
+: Optional. URL pointing to an issue tracker for the package.
+  [_Learn more._](#issue-tracker)
+
 `documentation`
 : Optional. Can be used to automatically create documentation.
   [_Learn more._](#documentation)
@@ -180,6 +188,24 @@ While this is technically optional *please do* provide one. It
 helps users understand where your package is coming from. If nothing else, you
 can always use the URL where you host the source code, such as
 [GitHub](https://github.com).
+
+### Repository
+
+The `repository` property should be a URL pointing to the repository for the
+package. This is often the URL for a github repository:
+`https://github.com/<user>/<repository>`.
+For [hosted packages](/tools/pub/dependencies#hosted-packages),
+this URL will be displayed on package's page.
+
+### Issue Tracker
+
+The `issue_tracker` property should be a URL pointing to the issue tracker for
+the package.
+For [hosted packages](/tools/pub/dependencies#hosted-packages),
+this URL will be displayed on package's page.
+If the `repository` property is pointing to a github repository, the issue
+tracker link will default to `https://github.com/<user>/<repository>/issues`,
+if it is not specified in the `issue_tracker` property.
 
 ### Documentation
 
